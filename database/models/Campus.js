@@ -8,6 +8,12 @@ const Campus = db.define("campus", {
     allowNull: false
   },
 
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull:false,
+    defaultValue: "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+  },
+
   address: {
     type: Sequelize.STRING,
     allowNull: false

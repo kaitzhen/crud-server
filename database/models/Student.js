@@ -11,6 +11,21 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    defaultValue: "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+  },
+
+  gpa: {
+    type: Sequelize.DECIMAL(10,2)
   }
 
 });
